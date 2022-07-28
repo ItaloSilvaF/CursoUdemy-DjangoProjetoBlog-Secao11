@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = 'django-insecure-7dj8e3z)q*efpn=^f%h+fvak#y0dehpfd(u%m)(1@_i)^k8rx^
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -40,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
 ]
 
 MIDDLEWARE = [
@@ -72,7 +71,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -86,7 +84,6 @@ DATABASES = {
         'PASSWORD': '290302',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -106,7 +103,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -122,7 +118,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = (BASE_DIR / 'static',)
+STATICFILES_DIRS = (BASE_DIR / 'templates/static',)
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = 'media/'
@@ -137,7 +133,7 @@ MESSAGE_TAGS = {
     constants.INFO: 'alert-info',
 }
 
-INSTALLED_APPS += ('django_summernote', )
+INSTALLED_APPS += ('django_summernote',)
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 

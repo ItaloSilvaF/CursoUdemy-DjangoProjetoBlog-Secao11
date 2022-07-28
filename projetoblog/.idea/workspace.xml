@@ -26,11 +26,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/italo_silvaf/Projetos/CursoPython3/CursoUdemy-DjangoProjetoBlog-Secao11/projetoblog"
+    "last_opened_file_path": "/home/italo_silvaf/Projetos/CursoPython3/CursoUdemy-DjangoProjetoBlog-Secao11/projetoblog/posts/templates/posts"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/posts/templates/posts" />
+      <recent name="$PROJECT_DIR$/templates/static" />
+      <recent name="$PROJECT_DIR$/templates/parciais" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
